@@ -59,44 +59,37 @@ a:hover {
 }
 #logo:hover {
     color: rgb(204, 11, 130);
-    .rosa {
-        color: rgb(255, 255, 255);
-    }
 }
-/* Ajustes gerais e container */
+#logo:hover .rosa {
+    color: rgb(255, 255, 255);
+}
 #apresentacao {
-    padding: 80px 10% 40px 10%; /* Dá um respiro nas laterais */
+    padding: 80px 10% 40px 10%;
     min-height: 70vh;
     display: flex;
     align-items: center;
 }
-
 .container-apresentacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
-
 .texto-apresentacao h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-
 .texto-apresentacao p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #ccc;
     max-width: 600px;
 }
-
-/* Estilo dos Botões */
 .botoes {
     margin-top: 30px;
     display: flex;
     gap: 15px;
 }
-
 .btn-contato, .btn-github {
     padding: 12px 25px;
     text-decoration: none;
@@ -104,23 +97,19 @@ a:hover {
     font-weight: bold;
     transition: 0.3s;
 }
-
 .btn-contato {
     background-color: rgb(204, 11, 130);
     color: white;
 }
-
 .btn-github {
     border: 1px solid rgb(204, 11, 130);
     color: rgb(204, 11, 130);
 }
-
 .btn-contato:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(204, 11, 130);
 }
 
-/* Imagem com borda neon */
 .foto-apresentacao img {
     border-radius: 50%;
     border: 4px solid rgb(204, 11, 130);
@@ -131,42 +120,35 @@ a:hover {
 }
 #habilidades {
     padding: 60px 10%;
-    background-color: rgb(10, 5, 35); /* Um tom levemente diferente para destacar */
+    background-color: rgb(10, 5, 35);
 }
-
 .titulo-sessao {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-family: "Momo Trust Display", sans-serif;
 }
-
 .container-skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Deixa responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .skill-card {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s;
 }
-
 .skill-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.08);
 }
-
 .skill-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     font-weight: bold;
 }
-
-/* Container da barra (cinza/branco ao fundo) */
 .bar-container {
     width: 100%;
     background-color: #444;
@@ -175,132 +157,98 @@ a:hover {
     margin-bottom: 15px;
     overflow: hidden;
 }
-
-/* A barra colorida */
 .bar {
     height: 100%;
-    background-color: rgb(204, 11, 130); /* Cor rosa do seu tema */
+    background-color: rgb(204, 11, 130);
     border-radius: 5px;
 }
-
 .skill-card p {
     font-size: 0.9rem;
     color: #bbb;
     line-height: 1.4;
 }
-
-/* --- SEÇÃO DE PROJETOS --- */
-
 #projetos {
-    padding: 80px 10%; /* Espaçamento interno da seção */
+    padding: 60px 2%;
+    text-align: center;
 }
-
-/* Container que organiza os cards em colunas responsivas */
 .container-projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px; /* Espaço entre um projeto e outro */
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 30px; 
+    flex-wrap: nowrap; 
 }
-
-/* Estilo individual do Card do Projeto */
 .projeto-card {
-    background: rgba(255, 255, 255, 0.05); /* Fundo levemente transparente */
-    border-radius: 12px;
-    overflow: hidden; /* Mantém a imagem dentro das bordas arredondadas */
-    border: 1px solid rgba(204, 11, 130, 0.2); /* Borda rosa sutil */
-    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    flex: 0 1 600px; 
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(204, 11, 130, 0.2);
+    transition: 0.4s;
+    text-align: left;
 }
-
-/* Efeito ao passar o mouse no card */
 .projeto-card:hover {
-    transform: translateY(-10px); /* O card sobe levemente */
-    border-color: rgb(204, 11, 130); /* Borda fica mais acesa */
-    box-shadow: 0 10px 30px rgba(204, 11, 130, 0.2); /* Brilho rosa ao fundo */
+    transform: translateY(-10px);
+    border-color: rgb(204, 11, 130);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
-
-/* Área da imagem */
 .projeto-img img {
     width: 100%;
     height: 220px;
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
-    filter: grayscale(30%); /* Começa levemente cinza */
-    transition: 0.4s;
+    object-fit: cover;
 }
-
-.projeto-card:hover .projeto-img img {
-    filter: grayscale(0%); /* Ganha cor total no hover */
-}
-
-/* Conteúdo de texto do projeto */
 .projeto-conteudo {
-    padding: 20px;
+    padding: 25px;
 }
-
 .projeto-conteudo h3 {
-    margin-bottom: 15px;
-    font-family: "Momo Trust Display", sans-serif;
+    font-size: 1.4rem;
     color: rgb(204, 11, 130);
-    font-size: 1.5rem;
+    margin-bottom: 12px;
 }
-
 .projeto-conteudo p {
-    font-size: 0.95rem;
-    color: #cccccc;
-    line-height: 1.6;
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+.tags {
     margin-bottom: 20px;
 }
-
-/* Tags de tecnologias (HTML, CSS, etc) */
-.tags {
-    margin-bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 .tags span {
-    background: rgba(204, 11, 130, 0.15);
-    color: rgb(204, 11, 130);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    background: rgba(204, 11, 130, 0.2);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 5px;
 }
-
-/* Estilo dos Links (GitHub e Ver Online) */
 .projeto-links {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .projeto-links a {
     text-decoration: none;
     font-size: 0.9rem;
-    color: #ffffff;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.projeto-links a:hover {
     color: rgb(204, 11, 130);
-    text-shadow: 0 0 5px rgba(204, 11, 130, 0.5);
+    font-weight: bold;
 }
-
+.projeto-links a:hover {
+    color: white;
+}
 #contato {
     padding: 60px 10%;
     text-align: center;
 }
-
 .links-contato {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-
 .links-contato a {
     color: rgb(204, 11, 130);
     text-decoration: none;
@@ -308,11 +256,9 @@ a:hover {
     font-size: 1.2rem;
     transition: 0.3s;
 }
-
 .links-contato a:hover {
     color: white;
 }
-
 footer {
     padding: 20px;
     text-align: center;
