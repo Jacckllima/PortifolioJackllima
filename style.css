@@ -24,7 +24,6 @@ header {
 }
 .rosa {
     color: rgb(204, 11, 130);
-    font-size: 40px;
 }
 nav {
     display: flex;
@@ -211,7 +210,8 @@ a:hover {
     color: #ddd;
     line-height: 1.5;
     margin-bottom: 20px;
-    min-height: 80px;
+    padding: 2px;
+    min-height: 150px;
 }
 .tags {
     margin-bottom: 20px;
@@ -265,4 +265,353 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.8rem;
     color: #888;
+}
+@media screen and (min-width: 2560px) {
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        padding: 40px 10%;
+    }
+    .menu {
+        gap: 50px;
+    }
+    .menu a {
+        font-size: 28px;
+    }
+    #apresentacao {
+        padding: 150px 15%;
+    }
+    .texto-apresentacao h2 {
+        font-size: 5rem;
+    }
+    .texto-apresentacao p {
+        font-size: 2rem;
+        max-width: 1000px;
+    }
+    .foto-apresentacao img {
+        width: 500px;
+        height: 500px;
+        border-width: 8px;
+    }
+    .btn-contato, .btn-github {
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    }
+    #habilidades {
+        padding: 100px 15%;
+    }
+    .titulo-sessao {
+        font-size: 4rem;
+        margin-bottom: 80px;
+    }
+    .container-skills {
+        grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas bem largas */
+        gap: 60px;
+    }
+    .skill-card {
+        padding: 40px;
+    }
+    .skill-info {
+        font-size: 1.8rem;
+    }
+    #projetos {
+        padding: 100px 10%;
+    }
+    .container-projetos {
+        gap: 60px;
+    }
+    .projeto-card {
+        flex: 0 1 900px; /* Aumenta a largura máxima dos cards de projeto */
+    }
+    .projeto-img img {
+        height: 450px; /* Imagens maiores para alta resolução */
+    }
+    .projeto-conteudo h3 {
+        font-size: 2.5rem;
+    }
+    .projeto-conteudo p {
+        font-size: 1.5rem;
+    }
+    .tags span {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+    #contato {
+        padding: 150px 10%;
+    }
+    .links-contato {
+        gap: 60px;
+    }
+    .links-contato a {
+        font-size: 2rem;
+    }
+    footer {
+        padding: 50px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 2048px) {
+    body {
+        font-size: 18px;
+    }
+    #apresentacao, #habilidades, #contato {
+        padding: 100px 15%;
+    }
+    #projetos {
+        padding: 80px 5%;
+    }
+    .texto-apresentacao h2 {
+        font-size: 4rem;
+    }
+    .texto-apresentacao p {
+        font-size: 1.4rem;
+        max-width: 800px;
+    }
+    .titulo-sessao {
+        font-size: 3.5rem;
+    }
+    .foto-apresentacao img {
+        width: 400px;
+        height: 400px;
+    }
+    .btn-contato, .btn-github {
+        padding: 15px 35px;
+        font-size: 1.2rem;
+    }
+    .container-skills {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .skill-card {
+        padding: 30px;
+    }
+    .container-projetos {
+        gap: 40px;
+    }
+    .projeto-card {
+        flex: 0 1 750px; 
+    }
+    .projeto-img img {
+        height: 300px; 
+    }
+    .projeto-conteudo h3 {
+        font-size: 2rem;
+    }
+    .projeto-conteudo p {
+        font-size: 1.2rem;
+    }
+    .menu a {
+        font-size: 22px;
+    }
+    .links-contato a {
+        font-size: 1.5rem;
+    }
+    footer {
+        padding: 40px;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 16px;
+    }
+    header, #apresentacao, #habilidades, #projetos, #contato {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #apresentacao {
+        padding: 100px 10%;
+        min-height: 60vh;
+    }
+    .texto-apresentacao h2 {
+        font-size: 3.5rem;
+    }
+    .texto-apresentacao p {
+        font-size: 1.3rem;
+        max-width: 700px;
+    }
+    .foto-apresentacao img {
+        width: 350px;
+        height: 350px;
+    }
+    .container-skills {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 40px;
+    }
+    .container-projetos {
+        gap: 50px;
+    }
+    .projeto-card {
+        flex: 0 1 650px; 
+    }
+    .projeto-img img {
+        height: 280px;
+    }
+    .projeto-conteudo h3 {
+        font-size: 1.8rem;
+    }
+    .projeto-conteudo p {
+        font-size: 1.1rem;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+    .titulo-sessao {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #apresentacao, #habilidades, #contato {
+        padding: 60px 5%;
+    }
+    #projetos {
+        padding: 60px 3%;
+    }
+    .container-apresentacao {
+        gap: 30px; 
+    }
+    .texto-apresentacao h2 {
+        font-size: 2.5rem;
+    }
+    .texto-apresentacao p {
+        font-size: 1.1rem;
+    }
+    .foto-apresentacao img {
+        width: 250px;
+        height: 250px;
+    }
+    .container-skills {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    .container-projetos {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .projeto-card {
+        flex: 1 1 450px; 
+        max-width: 100%;
+    }
+    .projeto-img img {
+        height: 200px;
+    }
+    .menu a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #apresentacao {
+        padding: 50px 5%;
+        flex-direction: column; 
+    }
+    .container-apresentacao {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .texto-apresentacao p {
+        max-width: 100%; 
+        margin: 0 auto 20px auto;
+    }
+    .botoes {
+        justify-content: center;
+    }
+    .foto-apresentacao img {
+        width: 220px;
+        height: 220px;
+    }
+    .container-skills {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .container-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto-card {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 550px; 
+    }
+    header {
+        padding: 15px 20px;
+    }
+    .menu {
+        gap: 10px;
+    }
+    .menu a {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+    .links-contato {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #apresentacao, #habilidades, #projetos, #contato {
+        padding: 40px 15px; 
+    }
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .menu {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 5px;
+    }
+    .menu a {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    .menu li {
+        margin: 5px 2px;
+    }
+    .container-apresentacao {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    .texto-apresentacao h2 {
+        font-size: 1.8rem; 
+    }
+    .foto-apresentacao img {
+        width: 180px; 
+        height: 180px;
+    }
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-contato, .btn-github {
+        width: 100%;
+        text-align: center;
+        padding: 15px; 
+    }
+    .container-skills {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .container-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .projeto-img img {
+        height: 180px; 
+    }
+    .titulo-sessao {
+        font-size: 1.8rem;
+    }
+    .links-contato {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
