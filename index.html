@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Protifolio</title>
 </head>
 <body>
     <header>
         <div id="logo">
             <h1>
-                 <!-- Usei o span pra dar uma cor diferente para algumas letras -->
                 <span class="rosa">J</span>ack 
                 <span class="rosa">ll</span>ima
             </h1>
@@ -24,102 +23,121 @@
             </ul>
         </nav>
     </header>
-    <section id="apresentacao">
-        <div class="container-apresentacao">
-            <div class="texto-apresentacao">
-                <h2>Olá! Sou <span class="rosa">Jaqueline Lima</span></h2>
-                <p>Estudante de <strong>Engenharia de Software</strong> e aspirante a desenvolvedora no <strong>Alpha EdTech</strong>. Transformo conceitos teóricos em soluções digitais, unindo design estratégico com código funcional.</p>
-                <p>Minha jornada passa por Redes, UX/UI e Desenvolvimento Front-end, com foco atual em dominar JavaScript.</p>
-                <div class="botoes">
-                    <a href="#contato" class="btn-contato">Entrar em contato</a>
-                    <a href="https://github.com/Jacckllima" target="_blank" class="btn-github">GitHub</a>
+    <main>
+        <section id="apresentacao">
+            <div class="container-apresentacao">
+                <div class="texto-apresentacao">
+                    <h2>Olá! Sou <span class="rosa">Jaqueline Lima</span></h2>
+                    <p>Estudante de <strong>Engenharia de Software</strong> e aspirante a desenvolvedora no <strong>Alpha EdTech</strong>. Transformo conceitos teóricos em soluções digitais, unindo design estratégico com código funcional.</p>
+                    <p>Minha jornada passa por Redes, UX/UI e Desenvolvimento Front-end, com foco atual em dominar JavaScript.</p>
+                    <div class="botoes">
+                        <a href="#contato" class="btn-contato">Entrar em contato</a>
+                        <a href="https://github.com/Jacckllima" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
+                <figure class="foto-apresentacao">
+                    <img src="img/jaqueline.jpeg" alt="Foto da Jaqueline">
+                </figure>
             </div>
-            <div class="foto-apresentacao">
-                <img src="img/jaqueline.jpeg" alt="Foto da Jaqueline">
-            </div>
-        </div>
-    </section>
-    <section id="habilidades">
-        <h2 class="titulo-sessao">Minhas <span class="rosa">Habilidades</span></h2>
-        <div class="container-skills">
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>HTML</span>
-                    <span>80%</span>
-                </div>
-                <div class="bar-container"><div class="bar" style="width: 80%;"></div></div>
-                <p>Estrutura de páginas, semântica, formulários e organização de conteúdo.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>CSS</span>
-                    <span>70%</span>
-                </div>
-                <div class="bar-container"><div class="bar" style="width: 70%;"></div></div>
-                <p>Estilização, layout, responsividade, Flexbox e noções de design visual.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>JavaScript</span>
-                    <span>40%</span>
-                </div>
-                <div class="bar-container"><div class="bar" style="width: 40%; background-color: #ffcc00;"></div></div>
-                <p>Lógica inicial, manipulação básica do DOM e estudo em andamento.</p>
-            </div>
-        </div>
-    </section>
-    <section id="projetos">
-        <div class="container-projetos">
-            <div class="projeto-card">
-                <div class="projeto-img">
-                    <img src="img/siteNara.png" alt="Capa do Projeto Nara Beauty">
-                </div>
-                <div class="projeto-conteudo">
-                    <h3>Nara Beauty</h3>
-                    <p>Uma landing page desenvolvida com foco em design minimalista e estética para o setor de skincare. Neste projeto, trabalhei a harmonia de cores, tipografia e a estruturação de uma interface intuitiva e atraente para o usuário final.</p>
-                    <div class="tags">
+        </section>
+        <section id="habilidades">
+            <h2 class="titulo-sessao">Minhas <span class="rosa">Habilidades</span></h2>
+            <div class="container-skills">
+                <div class="skill-card">
+                    <div class="skill-info">
                         <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Design Visual</span>
+                        <span>80%</span>
                     </div>
-                    <div class="projeto-links">
-                        <a href="https://github.com/jacckllima/AtividadeCss" target="_blank">Repositório GitHub</a>
-                        <a href="https://jacckllima.github.io/AtividadeCss/" target="_blank">Ver Online</a>
+                    <div class="bar-container"><div class="bar" style="width: 80%;"></div></div>
+                    <p>Estrutura de páginas, semântica, formulários e organização de conteúdo.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="bar-container"><div class="bar" style="width: 70%;"></div></div>
+                    <p>Estilização, layout, responsividade, Flexbox e noções de design visual.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="bar-container"><div class="bar" style="width: 40%; background-color: #ffcc00;"></div></div>
+                    <p>Lógica inicial, manipulação básica do DOM e estudo em andamento.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="container-projetos">
+                <div class="projeto-card">
+                    <figure class="projeto-img">
+                        <img src="img/siteNara.png" alt="Capa do Projeto Nara Beauty">
+                    </figure>
+                    <div class="projeto-conteudo">
+                        <h3>Nara Beauty</h3>
+                        <p>Uma landing page desenvolvida com foco em design minimalista e estética para o setor de skincare. Neste projeto, trabalhei a harmonia de cores, tipografia e a estruturação de uma interface intuitiva e atraente para o usuário final.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Design Visual</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/jacckllima/AtividadeCss" target="_blank">Repositório GitHub</a>
+                            <a href="https://jacckllima.github.io/AtividadeCss/" target="_blank">Ver Online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <figure class="projeto-img">
+                        <img src="img/siteAndroid.png" alt="Capa do Projeto Android">
+                    </figure>
+                    <div class="projeto-conteudo">
+                        <h3>História do Android</h3>
+                        <p>Site informativo desenvolvido para exercitar a <strong>semântica do HTML5</strong> e a organização de grandes volumes de texto. Focado em acessibilidade, legibilidade e uso de elementos como tabelas e vídeos integrados.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Conteúdo</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/jacckllima/site-android" target="_blank">Repositório GitHub</a>
+                            <a href="https://jacckllima.github.io/site-android/" target="_blank">Ver Online</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="projeto-card">
-                <div class="projeto-img">
-                    <img src="img/siteAndroid.png" alt="Capa do Projeto Android">
+        </section>
+    </main>
+    <section id="contato">
+        <h2 class="titulo-sessao">Vamos <span class="rosa">Conversar?</span></h2>
+        <p style="text-align: center; margin-bottom: 30px;">Estou em busca de oportunidades como estagiária ou desenvolvedora júnior.</p>
+        <div class="container-contato">
+            <form action="#" method="POST" class="formulario-contato">
+                <div class="campo-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 </div>
-                <div class="projeto-conteudo">
-                    <h3>História do Android</h3>
-                    <p>Site informativo desenvolvido para exercitar a <strong>semântica do HTML5</strong> e a organização de grandes volumes de texto. Focado em acessibilidade, legibilidade e uso de elementos como tabelas e vídeos integrados.</p>
-                    <div class="tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>Conteúdo</span>
-                    </div>
-                    <div class="projeto-links">
-                        <a href="https://github.com/jacckllima/site-android" target="_blank">Repositório GitHub</a>
-                        <a href="https://jacckllima.github.io/site-android/" target="_blank">Ver Online</a>
-                    </div>
+                <div class="campo-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                 </div>
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+                </div>
+                <button type="submit" class="btn-contato">Enviar Mensagem</button>
+            </form>
+            <div class="links-contato">
+                <a href="mailto:jackllima109@gmail.com">E-mail</a>
+                <a href="https://www.linkedin.com/in/jaqueline-de-souza-lima-7b68242ba/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/jacckllima" target="_blank">GitHub</a>
             </div>
         </div>
-    </section>
-    <section id="contato">
-    <h2 class="titulo-sessao">Vamos <span class="rosa">Conversar?</span></h2>
-    <p style="text-align: center;">Estou em busca de oportunidades como estagiária ou desenvolvedora júnior.</p>
-    <div class="links-contato">
-        <a href="mailto:jackllima109@gmail.com">E-mail</a>
-        <a href="https://www.linkedin.com/in/jaqueline-de-souza-lima-7b68242ba/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/jacckllima" target="_blank">GitHub</a>
-    </div>
     </section>
     <footer>
-        <p>&copy; 2025 Jaqueline Lima - Desenvolvido para o Alpha EdTech</p>
+        <p>&copy; 2025 - Jaqueline Lima</p>
     </footer>
 </body>
 </html>
