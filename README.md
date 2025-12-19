@@ -22,7 +22,7 @@ O projeto utiliza uma paleta de cores moderna com tons de azul profundo e detalh
 
 ## 🚀 Como visualizar o projeto
 Você pode acessar o portfólio online através do link abaixo:
-👉 [Link para o Portfólio](https://jacckllima.github.io/seu-repositorio/)
+👉 [Link para o Portfólio](https://jacckllima.github.io/PortifolioJackllima/)
 
 ## 📝 Licença
 Este projeto foi desenvolvido para fins educacionais no programa Alpha EdTech.
