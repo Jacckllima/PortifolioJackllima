@@ -1618,4 +1618,56 @@ footer {
     .toast {
         min-width: 100%;
     }
+    
+    /* Empilhamento dos links e gaveta de estudos de caso no mobile */
+    .projeto-links-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .projeto-links {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .btn-toggle-estudo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Otimização de espaçamento para a linha do tempo no mobile */
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px !important;
+    }
+    
+    .timeline-line {
+        left: 10px;
+    }
+    
+    .timeline-dot {
+        left: 2px !important;
+    }
+}
+
+/* Otimizações extremas para telas menores que 360px (Ex: Galaxy Fold dobrado) */
+@media screen and (max-width: 360px) {
+    .container-skills {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-badge {
+        padding: 10px 14px;
+        gap: 10px;
+    }
+    
+    .foto-apresentacao {
+        width: 220px;
+        height: 220px;
+    }
 }
