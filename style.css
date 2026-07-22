@@ -1655,19 +1655,155 @@ footer {
     }
 }
 
-/* Otimizações extremas para telas menores que 360px (Ex: Galaxy Fold dobrado) */
+/* Otimizações extremas para telas menores que 360px (Ex: Galaxy Fold dobrado, telas de 320px) */
 @media screen and (max-width: 360px) {
+    /* Ajustes Gerais de Tipografia Hero */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+    }
+    
+    .welcome-badge-wrapper {
+        font-size: 0.75rem !important;
+        padding: 6px 12px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .hero-stats-row {
+        gap: 15px 20px !important;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.6rem !important;
+    }
+    
+    .stat-item p {
+        font-size: 0.75rem !important;
+    }
+
+    /* Habilidades (Chips super compactos) */
     .container-skills {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
     }
     
     .skill-badge {
-        padding: 10px 14px;
-        gap: 10px;
+        padding: 8px 12px !important;
+        gap: 10px !important;
+    }
+    
+    .skill-icon-wrap {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .skill-name {
+        font-size: 0.85rem !important;
+    }
+    
+    .skill-percent {
+        font-size: 0.72rem !important;
+        padding: 2px 6px !important;
     }
     
     .foto-apresentacao {
-        width: 220px;
-        height: 220px;
+        width: 220px !important;
+        height: 220px !important;
+    }
+    
+    /* Jornada (Esconder linha e nós físicos, transformar em lista limpa de cards) */
+    .timeline-line, 
+    .timeline-dot {
+        display: none !important;
+    }
+    
+    .timeline-item {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 16px !important;
+        width: 100% !important;
+    }
+    
+    .timeline-content {
+        padding: 16px !important;
+        border-radius: 12px !important;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    .timeline-content p {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Projetos (Cards e Gavetas Compactas) */
+    .projeto-conteudo {
+        padding: 18px 14px !important;
+    }
+    
+    .projeto-img {
+        height: 160px !important;
+    }
+    
+    .projeto-conteudo h3 {
+        font-size: 1.15rem !important;
+    }
+    
+    .projeto-conteudo p {
+        font-size: 0.85rem !important;
+        margin-bottom: 12px !important;
+        line-height: 1.4 !important;
+    }
+    
+    .link-repo, 
+    .link-demo {
+        font-size: 0.8rem !important;
+        padding: 8px 12px !important;
+    }
+    
+    .btn-toggle-estudo {
+        font-size: 0.8rem !important;
+        padding: 8px 10px !important;
+    }
+    
+    .projeto-estudo-drawer.open {
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+    }
+    
+    .drawer-section p {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Formulário de Contato */
+    .contact-container {
+        padding: 0 4px !important;
+    }
+    
+    .formulario-contato {
+        padding: 20px 14px !important;
+        border-radius: 16px !important;
+    }
+    
+    .formulario-contato h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .input-grupo input, 
+    .input-grupo textarea {
+        padding: 10px 12px !important;
+        font-size: 0.88rem !important;
+        border-radius: 8px !important;
+    }
+    
+    .btn-enviar {
+        padding: 10px 16px !important;
+        font-size: 0.9rem !important;
+        border-radius: 8px !important;
     }
 }
