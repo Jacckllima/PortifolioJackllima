@@ -3,77 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Jaqueline Lima, estudante de Engenharia de Software, desenvolvedora front-end em formação no Alpha EdTech e designer UX/UI.">
+    <meta name="keywords" content="Jaqueline Lima, Portfólio, Engenharia de Software, Front-end, UX UI, HTML, CSS, JavaScript, Alpha EdTech">
+    <meta name="author" content="Jaqueline Lima">
+    
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfólio | Jaqueline Lima - Engenharia de Software">
+    <meta property="og:description" content="Confira as habilidades, projetos e contato de Jaqueline Lima.">
+    <meta property="og:image" content="img/jaqueline.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <title>Protifolio</title>
+    <title>Portfólio | Jaqueline Lima - Engenharia de Software</title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <h1>
-                <span class="rosa">J</span>ack 
-                <span class="rosa">ll</span>ima
-            </h1>
+    <header class="glass-header">
+        <div class="header-container">
+            <div id="logo">
+                <a href="#apresentacao">
+                    <span class="rosa">J</span>ack <span class="rosa">ll</span>ima
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Abrir Menu" aria-expanded="false" id="menuToggle">
+                <svg class="hamburger" viewBox="0 0 100 100" width="32">
+                    <rect class="line top" width="80" height="8" x="10" y="25" rx="4"></rect>
+                    <rect class="line middle" width="80" height="8" x="10" y="46" rx="4"></rect>
+                    <rect class="line bottom" width="80" height="8" x="10" y="67" rx="4"></rect>
+                </svg>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="menu">
+                    <li><a href="#apresentacao" class="menu-link active">Início</a></li>
+                    <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                    <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li><a href="#contato" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#apresentacao">Inicio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
+
     <main>
-        <section id="apresentacao">
+        <!-- Seção Apresentação -->
+        <section id="apresentacao" class="hero-section">
             <div class="container-apresentacao">
                 <div class="texto-apresentacao">
-                    <h2>Olá! Sou <span class="rosa">Jaqueline Lima</span></h2>
+                    <div class="welcome-badge-wrapper">
+                        <span class="status-dot"></span>
+                        <span>Disponível para Estágio / Júnior</span>
+                    </div>
+                    <h2>Olá! Sou <span class="rosa text-gradient">Jaqueline Lima</span></h2>
                     <p>Estudante de <strong>Engenharia de Software</strong> e aspirante a desenvolvedora no <strong>Alpha EdTech</strong>. Transformo conceitos teóricos em soluções digitais, unindo design estratégico com código funcional.</p>
-                    <p>Minha jornada passa por Redes, UX/UI e Desenvolvimento Front-end, com foco atual em dominar JavaScript.</p>
+                    <p>Minha jornada passa por Redes, UX/UI e Desenvolvimento Front-end, com foco atual em dominar JavaScript, Python e Inteligência Artificial.</p>
+                    <div class="hero-stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">4º Sem.</span>
+                            <span class="stat-label">Eng. Software</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">17</span>
+                            <span class="stat-label">Módulos Concluídos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Foco Prático</span>
+                        </div>
+                    </div>
                     <div class="botoes">
-                        <a href="#contato" class="btn-contato">Entrar em contato</a>
-                        <a href="https://github.com/Jacckllima" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#contato" class="btn-contato">
+                            <span>Fale Comigo</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </a>
+                        <a href="https://github.com/Jacckllima" target="_blank" rel="noopener" class="btn-github">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
-                <figure class="foto-apresentacao">
-                    <img src="img/jaqueline.jpeg" alt="Foto da Jaqueline">
-                </figure>
+                <div class="foto-apresentacao-container">
+                    <figure class="foto-apresentacao">
+                        <img src="img/jaqueline.jpeg" alt="Foto de Jaqueline Lima">
+                        <div class="photo-glow"></div>
+                    </figure>
+                </div>
             </div>
         </section>
-        <section id="habilidades">
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="skills-section reveal-element">
             <h2 class="titulo-sessao">Minhas <span class="rosa">Habilidades</span></h2>
+            
+            <!-- Filtros de Habilidades -->
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="frontend">Front-end & Design</button>
+                <button class="filter-btn" data-filter="backend">Back-end & BD</button>
+                <button class="filter-btn" data-filter="infra">Infra & DevOps</button>
+                <button class="filter-btn" data-filter="ia">IA & Dados</button>
+            </div>
+
             <div class="container-skills">
-                <div class="skill-card">
-                    <div class="skill-info">
-                        <span>HTML</span>
-                        <span>80%</span>
+                <!-- Redes e Internet -->
+                <div class="skill-badge" data-category="infra">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                     </div>
-                    <div class="bar-container"><div class="bar" style="width: 80%;"></div></div>
-                    <p>Estrutura de páginas, semântica, formulários e organização de conteúdo.</p>
+                    <span class="skill-name">Redes & Internet</span>
+                    <span class="skill-percent">100%</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-info">
-                        <span>CSS</span>
-                        <span>70%</span>
+
+                <!-- Controle de Versão -->
+                <div class="skill-badge" data-category="infra">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
                     </div>
-                    <div class="bar-container"><div class="bar" style="width: 70%;"></div></div>
-                    <p>Estilização, layout, responsividade, Flexbox e noções de design visual.</p>
+                    <span class="skill-name">Controle de Versão</span>
+                    <span class="skill-percent">100%</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-info">
-                        <span>JavaScript</span>
-                        <span>40%</span>
+
+                <!-- HTML -->
+                <div class="skill-badge" data-category="frontend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                     </div>
-                    <div class="bar-container"><div class="bar" style="width: 40%; background-color: #ffcc00;"></div></div>
-                    <p>Lógica inicial, manipulação básica do DOM e estudo em andamento.</p>
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-badge" data-category="frontend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- UX/UI -->
+                <div class="skill-badge" data-category="frontend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                    </div>
+                    <span class="skill-name">UX/UI Design</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-badge" data-category="frontend backend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line><line x1="9" y1="19" x2="13" y2="19"></line></svg>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Linux -->
+                <div class="skill-badge" data-category="infra">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                    </div>
+                    <span class="skill-name">Linux</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Servidores -->
+                <div class="skill-badge" data-category="backend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    </div>
+                    <span class="skill-name">Servidores Web</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="skill-badge" data-category="frontend backend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <span class="skill-name">TypeScript</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Banco de dados relacional -->
+                <div class="skill-badge" data-category="backend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    </div>
+                    <span class="skill-name">Banco de Dados (SQL)</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-badge" data-category="backend ia">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- IA -->
+                <div class="skill-badge" data-category="ia">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+                    </div>
+                    <span class="skill-name">Inteligência Artificial</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Flutter -->
+                <div class="skill-badge" data-category="frontend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <span class="skill-name">Flutter (Mobile)</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Langchain -->
+                <div class="skill-badge" data-category="ia">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    </div>
+                    <span class="skill-name">LangChain (IA)</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Visão Computacional -->
+                <div class="skill-badge" data-category="ia">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <span class="skill-name">Visão Computacional</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- Docker -->
+                <div class="skill-badge" data-category="infra">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <span class="skill-name">Docker (DevOps)</span>
+                    <span class="skill-percent">100%</span>
+                </div>
+
+                <!-- WebSockets -->
+                <div class="skill-badge" data-category="backend">
+                    <div class="skill-icon-wrap">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <span class="skill-name">WebSockets</span>
+                    <span class="skill-percent">50%</span>
                 </div>
             </div>
         </section>
-        <section id="projetos">
+
+        <!-- Seção Linha do Tempo da Jornada (Minha Jornada) -->
+        <section id="jornada" class="jornada-section reveal-element">
+            <h2 class="titulo-sessao">Minha <span class="rosa">Jornada</span></h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Marco 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Engenharia de Software</h3>
+                        <p>Início do curso superior de Bacharelado em Engenharia de Software. Desenvolvimento de uma base de lógica de programação sólida, análise de requisitos e arquitetura de sistemas.</p>
+                    </div>
+                </div>
+
+                <!-- Marco 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Infraestrutura & Redes</h3>
+                        <p>Estudos avançados em redes e internet, cobrindo o funcionamento do modelo OSI, protocolos de comunicação (TCP/IP, HTTP, DNS), segurança básica e operação de terminal em ambientes Linux.</p>
+                    </div>
+                </div>
+
+                <!-- Marco 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Aceleração Front-end & UX/UI</h3>
+                        <p>Ingresso na aceleração intensiva do Alpha EdTech. Foco em desenvolvimento de interfaces web semânticas, CSS responsivo, manipulação dinâmica com JavaScript e design de interfaces focado na usabilidade com Figma.</p>
+                    </div>
+                </div>
+
+                <!-- Marco 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Foco Full-stack & IA</h3>
+                        <p>Domínio aprofundado em lógica com TypeScript, arquitetura de APIs no Back-end com Python e bancos de dados estruturados (SQL). Especialização em DevOps (Docker) e orquestração de Inteligência Artificial usando LangChain para automações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projects-section reveal-element">
+            <h2 class="titulo-sessao">Meus <span class="rosa">Projetos</span></h2>
+            
+            <!-- Projetos Grid -->
             <div class="container-projetos">
-                <div class="projeto-card">
+                <!-- Card Projeto 1 -->
+                <article class="projeto-card">
                     <figure class="projeto-img">
-                        <img src="img/siteNara.png" alt="Capa do Projeto Nara Beauty">
+                        <img src="img/siteNara.png" alt="Capa do Projeto Nara Beauty" loading="lazy">
+                        <div class="project-overlay"></div>
                     </figure>
                     <div class="projeto-conteudo">
                         <h3>Nara Beauty</h3>
@@ -83,15 +332,49 @@
                             <span>CSS</span>
                             <span>Design Visual</span>
                         </div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/jacckllima/AtividadeCss" target="_blank">Repositório GitHub</a>
-                            <a href="https://jacckllima.github.io/AtividadeCss/" target="_blank">Ver Online</a>
+                        
+                        <div class="projeto-links-wrapper">
+                            <button class="btn-toggle-estudo" data-target="estudo-nara">
+                                <span>Estudo de Caso</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                            <div class="projeto-links">
+                                <a href="https://github.com/jacckllima/AtividadeCss" target="_blank" rel="noopener" class="link-repo">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    Código
+                                </a>
+                                <a href="https://jacckllima.github.io/AtividadeCss/" target="_blank" rel="noopener" class="link-demo">
+                                    Ver Online
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Estudo de Caso Nara -->
+                        <div class="projeto-estudo-drawer" id="estudo-nara">
+                            <div class="drawer-inner">
+                                <div class="drawer-section">
+                                    <h4>Desafio</h4>
+                                    <p>Projetar uma landing page de skincare minimalista que transmita sofisticação e leveza estética, mantendo o carregamento rápido e total responsividade.</p>
+                                </div>
+                                <div class="drawer-section">
+                                    <h4>Solução</h4>
+                                    <p>Construção de uma paleta de cores neutras e suaves, tipografia refinada e layout fluído com Flexbox e CSS Grid para adaptação em qualquer dispositivo.</p>
+                                </div>
+                                <div class="drawer-section">
+                                    <h4>Aprendizados</h4>
+                                    <p>Estudo aprofundado sobre harmonia visual cromática, design editorial responsivo e controle refinado de alinhamento estético.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="projeto-card">
+                </article>
+
+                <!-- Card Projeto 2 -->
+                <article class="projeto-card">
                     <figure class="projeto-img">
-                        <img src="img/siteAndroid.png" alt="Capa do Projeto Android">
+                        <img src="img/siteAndroid.png" alt="Capa do Projeto Android" loading="lazy">
+                        <div class="project-overlay"></div>
                     </figure>
                     <div class="projeto-conteudo">
                         <h3>História do Android</h3>
@@ -99,45 +382,116 @@
                         <div class="tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Conteúdo</span>
+                            <span>Acessibilidade</span>
                         </div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/jacckllima/site-android" target="_blank">Repositório GitHub</a>
-                            <a href="https://jacckllima.github.io/site-android/" target="_blank">Ver Online</a>
+                        
+                        <div class="projeto-links-wrapper">
+                            <button class="btn-toggle-estudo" data-target="estudo-android">
+                                <span>Estudo de Caso</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                            <div class="projeto-links">
+                                <a href="https://github.com/jacckllima/site-android" target="_blank" rel="noopener" class="link-repo">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    Código
+                                </a>
+                                <a href="https://jacckllima.github.io/site-android/" target="_blank" rel="noopener" class="link-demo">
+                                    Ver Online
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                </a>
+                            </div>
                         </div>
+
+                        <!-- Estudo de Caso Android -->
+                        <div class="projeto-estudo-drawer" id="estudo-android">
+                            <div class="drawer-inner">
+                                <div class="drawer-section">
+                                    <h4>Desafio</h4>
+                                    <p>Organizar um volume grande de conteúdo textual informativo e integrá-lo com tabelas e vídeos, sem comprometer a legibilidade ou a semântica.</p>
+                                </div>
+                                <div class="drawer-section">
+                                    <h4>Solução</h4>
+                                    <p>Uso rigoroso da semântica HTML5 (article, section, aside), tabelas com escopo correto para leitores de tela e estilização otimizada para legibilidade.</p>
+                                </div>
+                                <div class="drawer-section">
+                                    <h4>Aprendizados</h4>
+                                    <p>Aprofundamento em acessibilidade digital (WCAG), semântica do código para SEO e estruturação hierárquica de informações complexas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contact-section">
+            <h2 class="titulo-sessao">Vamos <span class="rosa">Conversar?</span></h2>
+            <p class="sub-contato">Estou em busca de oportunidades como estagiária ou desenvolvedora júnior. Envie sua mensagem!</p>
+            
+            <div class="container-contato">
+                <!-- Formulário -->
+                <form action="#" class="formulario-contato" id="contactForm">
+                    <div class="campo-grupo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-contato send-btn">
+                        <span>Enviar Mensagem</span>
+                        <svg class="send-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+                
+                <!-- Info e Links Sociais -->
+                <div class="info-contato-bloco">
+                    <h3>Redes & Contatos</h3>
+                    <p>Sinta-se à vontade para se conectar comigo em outras redes sociais:</p>
+                    <div class="links-contato">
+                        <a href="mailto:jackllima109@gmail.com" class="link-social" title="Enviar E-mail">
+                            <span class="social-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
+                            <span>E-mail</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaqueline-de-souza-lima-7b68242ba/" target="_blank" rel="noopener" class="link-social" title="LinkedIn">
+                            <span class="social-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/jacckllima" target="_blank" rel="noopener" class="link-social" title="GitHub">
+                            <span class="social-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/limacode.lab/" target="_blank" rel="noopener" class="link-social" title="Instagram">
+                            <span class="social-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </span>
+                            <span>Instagram</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section id="contato">
-        <h2 class="titulo-sessao">Vamos <span class="rosa">Conversar?</span></h2>
-        <p style="text-align: center; margin-bottom: 30px;">Estou em busca de oportunidades como estagiária ou desenvolvedora júnior.</p>
-        <div class="container-contato">
-            <form action="#" method="POST" class="formulario-contato">
-                <div class="campo-grupo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="campo-grupo">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                </div>
-                <div class="campo-grupo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
-                </div>
-                <button type="submit" class="btn-contato">Enviar Mensagem</button>
-            </form>
-            <div class="links-contato">
-                <a href="mailto:jackllima109@gmail.com">E-mail</a>
-                <a href="https://www.linkedin.com/in/jaqueline-de-souza-lima-7b68242ba/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/jacckllima" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </section>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
     <footer>
-        <p>&copy; 2025 Jaqueline Lima - Todos direitos reservados</p>
+        <p>&copy; 2026 Jaqueline Lima - Todos os direitos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
