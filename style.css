@@ -240,16 +240,13 @@ button {
 }
 
 .hamburger .line {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 8;
+    fill: currentColor;
     transition: var(--transicao);
     transform-origin: center;
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .line.top {
-    transform: rotate(45deg) translate(0, 0);
-    y: 46px;
+    transform: translateY(21px) rotate(45deg);
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .line.middle {
@@ -257,8 +254,7 @@ button {
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .line.bottom {
-    transform: rotate(-45deg) translate(0, 0);
-    y: 46px;
+    transform: translateY(-21px) rotate(-45deg);
 }
 
 /* ==========================================================================
